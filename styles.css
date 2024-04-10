@@ -1,0 +1,342 @@
+/* Bootstrap overrides and custom styles */
+
+
+/* Custom CSS variables */
+:root {
+  --royal-blue: #4169E1;
+  --emerald-green: #50C878;
+  --crimson: #DC143C;
+  --goldenrod: #DAA520;
+  --deep-sky-blue: #00BFFF;
+  --orchid: #DA70D6;
+  --turquoise: #40E0D0;
+  --coral: #FF7F50;
+  --indigo: #4B0082;
+  --lavender: #E6E6FA;
+  --teal: #008080;
+  --teal1: #007bff;
+  --slate-blue: #6A5ACD;
+  --chartreuse: #7FFF00;
+  --salmon: #FA8072;
+  --periwinkle: #CCCCFF;
+  --maroon: #800000;
+  --cornflower-blue: #6495ED;
+  --olive-green: #808000;
+  --sky-blue: #87CEEB;
+  --magenta: #FF00FF;
+  --navbar-background-color: #333;
+  --footer-background-color: #f44336;
+  --body-background-color: #00bcd4;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f3f3f3;
+  background-color: hsl(0,0%,30%);
+  margin: 0;
+  padding: 0;
+}
+/* Navbar styles */
+.logo{
+  border-radius: 30px;
+  padding: 1px;
+  margin-right: 10px;
+  object-fit: cover;
+  background-color: yellow;
+  color: transparent;
+}
+
+
+/* Main content padding */
+#main-content {
+  padding-top: 60px; /* Adjusted to accommodate navbar */
+  padding-bottom: 100px;
+  padding-left: 15px; /* Adjusted to match Bootstrap container padding */
+  padding-right: 15px; /* Adjusted to match Bootstrap container padding */
+}
+
+/* General body styles */
+#quotes{
+  position:absolute;
+  margin-left: -15px;
+  margin-top:-35px;
+  z-index: 1;
+}
+#background-images{
+  padding-right: -100px;
+  padding-left: 20px;
+  margin:-100px;
+  width: 130%;
+  margin-bottom: -100px;
+  
+  z-index: 500;
+}
+#studies{
+  margin-top: 200px;
+}
+
+/* Styles for the upper section */
+#upper-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--navbar-background-color);
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  top:0;
+  box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+#nav-elements {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+#nav-elements li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+#nav-elements li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
+
+/* Footer styles */
+
+
+/* Footer styles */
+/* Bootstrap overrides and custom styles */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropup ul .dropdown-item:hover{
+  background-color:  #4B0082;;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+
+.container img{
+  display: none;
+}
+
+
+
+
+
+footer {
+  bottom:20%;
+  height: 25%;
+  background-color: var(--footer-background-color);
+  color: white;
+  padding-top: 10%;
+  box-shadow: 0 -2px 4px 2px rgba(97, 27, 27, 0.6);
+}
+footer .notifications-languages ul:nth-child(1) select{
+  padding: 0;
+  background-color: var(--teal);
+  color:white;
+  outline: 1px solid;
+  font-size: 0.9em;
+  border-radius: 5px;
+}
+#allItems option{
+  color: green;
+}
+.footer-links a {
+  color: white;
+}
+
+.footer-links a:hover {
+  color: #037daf;
+ 
+}
+
+#news-app {
+  display: flex;
+  align-items: center;
+  background-color: var(--teal1);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 20px;
+}
+.emoji-pointer{
+  border: 1px solid var(--deep-sky-blue);
+  height: 10%;
+  width: 25%;
+  border-radius: 45%;
+}
+#emoji-paragraph {
+  background-color: rgb(42, 89, 42);
+  border: none;
+  color: var(--deep-sky-blue);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#news-emoji a {
+  font-size: 1.4rem;
+  padding-left: 5px;
+}
+
+.dropup ul .dropdown-item:hover {
+  background-color: #4B0082;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+/* Add this CSS to your existing styles */
+
+
+
+#copyright {
+  position: absolute;
+  bottom: 20%;
+  top:80%;
+  left: 0;
+  height:50%;
+  width: 100%;
+  background-color: var(--indigo); /* Same color as the footer */
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1; /* Ensure the copyright text appears above other content */
+}
+
+#copyright p {
+  color: white; /* Text color */
+  font-size: 0.85rem; /* Adjust font size as needed */
+}
+@media only screen and (max-width: 576px) {
+  /* Adjust footer padding and height for small screens */
+  footer{
+    padding-top: 4px;
+  }
+  .footer-contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 0;
+    height: auto;
+  }
+  .footer-contents .socials ul{
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .footer-contents .socials ul li{
+    margin: 0;
+    padding: 2px;
+    margin-top: -5px;
+    margin-bottom: -17px;
+  }
+  
+  /* Make footer links stack vertically */
+  footer nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Reduce font size of footer links */
+  footer nav li a {
+    font-size: 0.9em;
+  }
+
+  /* Increase padding for the footer links */
+  footer nav li {
+    padding: 5px;
+  }
+
+  /* Adjust padding and font size for the dropdown menu items */
+  .dropdown-menu {
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  .notifications-languages ul{
+    font-size: 0.9rem;
+    display: flex;
+    gap:3px;
+    flex-direction: column;
+  }
+}
+/* Media query for medium-sized screens */
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  /* Adjust footer padding and height for medium screens */
+  footer {
+    padding-top: 10px;
+  }
+  #news-app{
+    position: absolute;
+    right: 20px;
+    bottom: 2px;
+  }
+
+  /* Adjust font size and spacing for footer links */
+  footer nav li a {
+    font-size: 0.9em;
+  }
+
+  /* Increase padding for the footer links */
+  footer nav li {
+    padding: 6px;
+  }
+
+  /* Adjust padding and font size for the dropdown menu items */
+  .dropdown-menu {
+    padding: 0.6rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Media query for large screens */
+@media only screen and (min-width: 992px) {
+  /* Adjust footer padding for large screens */
+  footer {
+    padding-top: 12px;
+  }
+
+  /* Adjust font size and spacing for footer links */
+  footer nav li a {
+    font-size: 1.1em;
+  }
+
+  /* Increase padding for the footer links */
+  footer nav li {
+    padding: 10px;
+  }
+
+  /* Adjust padding and font size for the dropdown menu items */
+  .dropdown-menu {
+    padding: 1rem 0;
+    font-size: 1.1rem;
+  }
+}

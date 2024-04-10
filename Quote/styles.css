@@ -1,0 +1,33 @@
+body{
+ 
+  
+  align-items: center;
+}
+#root{
+  margin-top:10px;
+  align-items: center;
+  vertical-align: middle;
+}
+#root div{
+  display: flex;
+  flex-direction: column;
+  left:20px;
+  right:40px;
+  width: 50%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+#root div div{
+  border: 1px solid;
+}
+#root div p{
+  border: 1px solid;
+  display: inline-block;
+  width: 24%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 3px;
+  object-fit: contain;
+}
